@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafío 1</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="./">
+            <img src="./assets/Logo.png">
+        </a>
+    </header>
+    <main class="encriptador">
+        <!--Este section contiene el encriptador-->
+        <section class="encriptador_ladoizquierdo">
+            <!--Área para ingresar el texto-->
+            <textarea id="textoEntradaUsuario" class="encriptador_ladoizquierdo_areatexto" placeholder="Ingrese el texto aquí"></textarea>
+
+            <!--Aviso-->
+            <div class="encriptador_ladoizquierdo_aviso">
+                <img class="encriptador_ladoizquierdo_aviso_imagen" src="./assets/Vector.png">
+                <p class="encriptador_ladoizquierdo_aviso_p" >Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <!--Botones-->  
+            <div class="encriptador_ladoizquierdo_botones">
+                <button id="botonEncriptar" class="encriptador_ladoizquierdo_botones_encriptar">Encriptar</button>
+                <button id="botonDesencriptar" class="encriptador_ladoizquierdo_botones_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <!--Esta sección contiene el resultado-->
+        <section id="right" class="encriptador_ladoderecho ajustar">         
+            <div class="encriptador_ladoderecho_informacion">
+                <img id="muneco" class="img-muneco" src="./assets/Muñeco.png">
+                <textarea id="resultadoFinal" readonly class="encriptador_ladoderecho_p1 ajustar" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="infoDerecha" class="encriptador_ladoderecho_p2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <!--Área con el texto resultado final-->
+            <!--<textarea></textarea>-->
+
+            <!--Botón Copiar-->
+            <button id="botonCopiar" class="encriptador_ladoderecho_botoncopiar boton_oculto">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/jmontoyad" target="_blank">
+            <img class="footer_github" src="./assets/github.png">
+        </a>
+        <p class="footer_creditos">&copy; 2024 - Desarrolado por Jhonatan Montoya</p>
+        <p class="footer_direccion">Chiclayo, Perú</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
